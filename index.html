@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>India Times</title>
+  </head>
+  <body>
+    <div class="title-section">
+      <h1 class="title">INDIA TIMES</h1>
+      <h3 class="title-tag">The India in a headline</h3>
+    </div>
+
+    <div class="searchbox-container">
+      <div class="searchBox">
+        <input class="searchInput" type="text" name="" placeholder="Search" />
+      </div>
+    </div>
+
+    <div class="nav-section">
+      <div class="tabs-container">
+        <button type="button" class="tab-btn" data-tab="world">World</button>
+        <button type="button" class="tab-btn" data-tab="business">
+          Business
+        </button>
+        <button type="button" class="tab-btn" data-tab="entertainment">
+          Entertainment
+        </button>
+
+        <button type="button" class="tab-btn" data-tab="health">Health</button>
+        <button type="button" class="tab-btn" data-tab="science">
+          Science
+        </button>
+        <button type="button" class="tab-btn" data-tab="sports">Sports</button>
+        <button type="button" class="tab-btn" data-tab="technology">
+          Technology
+        </button>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="main-container" id="card-template">
+        <div class="trend-icon">
+          <i class="trending fas fa-2x fa-chart-line"></i>
+          <!-- <i class="fas trending fa-2x fa-fire"></i> -->
+          <span class="trending">Trending</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="loader-container">
+      <div class="loader" id="loader"></div>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>
