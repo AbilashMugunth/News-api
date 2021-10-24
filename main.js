@@ -1,5 +1,3 @@
-// let tabCategory;
-
 const api_key = `&lang=en&token=a6eb36a186969ed8b33a82f908bdb58e`;
 
 const headUrl = `https://gnews.io/api/v4/search?q=`;
@@ -33,6 +31,7 @@ const searchUrl = `https://gnews.io/api/v4/search?q=`;
 const mainContainer = document.querySelector(".main-container");
 const searchBoxContainer = document.querySelector(".searchbox-container");
 const searchNewsContainer = document.querySelector(".search-news-container");
+const loaderContainer = document.querySelector(".loader-container");
 
 async function newsApi(url) {
   loading();
@@ -85,6 +84,7 @@ function insert(news) {
         </div>`;
     mainContainer.appendChild(newsContainer);
     complete();
+    loaderContainer.style.display = "none";
 
     // searchContainer.appendChild(newsContainer);
   });
@@ -126,21 +126,3 @@ searchTab.addEventListener("keyup", function (event) {
     }
   }
 });
-
-// *! Tab Section/////////////////////////////////
-
-// const tabs = document.querySelectorAll(".tab-btn");
-
-// tabs.forEach((tab) => {
-//   tab.addEventListener("click", () => {
-//     const target = document.querySelector(tab.dataset.t);
-//     tabContents.forEach((tabContent) => {
-//       tabContent.classList.remove("active");
-//     });
-//     tabs.forEach((tab) => {
-//       tab.classList.remove("active");
-//     });
-//     tab.classList.add("active");
-//     target.classList.add("active");
-//   });
-// });

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
 
@@ -14,9 +14,14 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto Slab", serif;
-  background-color: #757573;
+  /* background-color: #757573; */
+  background-color: #b3b3b1;
 }
 
 /* *! Title Section ///////////////// */
@@ -62,9 +67,13 @@ body {
   background: #f3f3f0;
   font-family: "Roboto Slab", serif;
   border-radius: 0 0 1rem 0;
-  font-size: 0.95rem;
-  padding: 0.75rem 1.5rem;
-  margin-bottom: 0.4rem;
+  font-size: 1rem;
+  padding: 1.5rem 3.5rem;
+  margin-bottom: 0.6rem;
+  border: none;
+}
+.tab-btn:not(:last-child) {
+  margin-right: 0.3rem;
 }
 
 .tab-btn.active {
@@ -77,6 +86,23 @@ body {
   border: none;
   color: white;
   transform: scale(1.1);
+}
+
+.back-to-top-container {
+  position: fixed;
+  right: 15px;
+  bottom: 30px;
+}
+
+#back-to-top-link {
+  text-decoration: none;
+  color: white;
+}
+.back-to-top {
+  padding: 0.8rem;
+  background: #f6916b;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 /* !! Search bar///// */
@@ -278,7 +304,8 @@ body {
 /* Big screen devices (889px and above) */
 @media only screen and (max-width: 889px) {
   .tab-btn {
-    padding: 0.5rem 1rem;
+    /* padding: 0.5rem 1rem; */
+    padding: 1.2rem 3rem;
   }
 
   .searchBox {
@@ -311,11 +338,15 @@ body {
   }
 
   .title-tag {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+  }
+  .tab-btn {
+    /* padding: 0.5rem 1rem; */
+    padding: 1rem 2.2rem;
   }
 
   .trending {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-right: 0.3rem;
     margin-bottom: 1rem;
   }
@@ -331,10 +362,22 @@ body {
 
 /* Small screen devices (600px and above) */
 @media only screen and (max-width: 600px) {
+  .main-container {
+    padding-top: 0;
+    /* margin-top: -1rem; */
+  }
+  .tabs-container {
+    margin-top: 0.5rem;
+  }
   .poster {
     width: 8rem;
     height: 6rem;
     min-width: 8rem;
+  }
+
+  .tab-btn {
+    /* padding: 0.5rem 1rem; */
+    padding: 0.8rem 1.7rem;
   }
   .overview {
     /* margin-top: 1rem; */
@@ -348,16 +391,19 @@ body {
   .news-title {
     font-size: 0.9rem;
   }
-
+  .tab-btn {
+    /* padding: 0.5rem 1rem; */
+    padding: 0.5rem 1rem;
+  }
   .overview {
-    font-size: 0.7rem;
+    font-size: 0.77rem;
   }
 
   .news-box {
     border-radius: 0 0 0.5rem 0;
   }
   .date {
-    margin-left: 0.3rem;
+    margin-left: 0.5rem;
     /* margin-top: 0.15rem; */
     /* display: block; */
   }
@@ -365,6 +411,18 @@ body {
   .news-info {
     margin-left: 0.5rem;
     padding: 0.2rem;
+  }
+
+  /* .back-to-top-container {
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+  }
+   */
+
+  .back-to-top {
+    padding: 0.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -391,4 +449,19 @@ body {
     margin-left: 0.3rem;
     padding: 0.1rem;
   }
+}
+
+footer {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5vh;
+}
+footer span {
+  color: #ffffff;
+  font-size: 1.2rem;
+  /* font-weight: 500; */
+  margin-left: 0.2rem;
+  letter-spacing: 0.1rem;
 }
