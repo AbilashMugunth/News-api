@@ -210,7 +210,6 @@ body {
 }
 
 .date {
-  margin-left: 1rem;
   color: #f6916b;
 }
 
@@ -412,11 +411,6 @@ body {
   .news-box {
     border-radius: 0 0 0.5rem 0;
   }
-  .date {
-    margin-left: 0.5rem;
-    /* margin-top: 0.15rem; */
-    /* display: block; */
-  }
 
   .news-info {
     margin-left: 0.5rem;
@@ -441,11 +435,6 @@ body {
 
   .news-box {
     border-radius: 0 0 0.2rem 0;
-  }
-  .date {
-    margin-left: 0.2rem;
-    /* margin-top: 0.15rem; */
-    /* display: block; */
   }
 
   .news-info {

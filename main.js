@@ -76,9 +76,10 @@ function insert(news) {
             <a href="${element.url}" class='link' target="_blank">
               <h3 class="news-title" data-tooltip="View Fullstory" >${
                 element.title
-              }<span 
-              class="date">${slicedDate()}</span></h3>
+              }</h3>
             </a>
+            <span 
+              class="date">${slicedDate()}</span>
             <p class="overview">${element.description}</p>
           </div>
         </div>`;
